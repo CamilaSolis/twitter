@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+	font-family: Helvetica;
+	background-color: #F5F8FA;
+	color: #292F33;
+}
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+.head {
+	width: 100%;
+	font-size: 20px;
+	text-align: center;
+	background-color: white;
+	padding: 1%;
+	border-bottom: 1px solid #D0D3D5;
+}
+.texto {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.tarea {
+	width: 100%;
+	background-color: #E5F2F7;
+	border: 1px solid #E1E8ED;
+	padding: 10px;
+	border-radius: 5px;
+}
