@@ -31,3 +31,17 @@ body{
 	padding: 10px;
 	border-radius: 5px;
 }
+.iconos{
+	margin: 5px;
+	font-size: 20px;
+	float:right;
+}
+:checked + span {
+  text-decoration: line-through;
+}
+.classlista{
+	list-style:none;
+}
+.row{
+	margin: 0;
+}
