@@ -81,8 +81,7 @@ li {
 		width: 70%;
 	}
 }
-@media
-(min-width: 320px) and (max-width: 479px){
+@media (max-width: 479px){
 	.headpc{
 		display: none;
 	}
