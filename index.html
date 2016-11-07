@@ -3,34 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Twitter</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/png" href="twitter.png"/>
 	<link rel="stylesheet" type="text/css" href="js/bootstrap.min.css">
-	<link rel="stylesheet" type="text/javascript" href="js/bootstrap.min.js">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-	<script type="text/javascript" src="js/script.js"></script>
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<header>
-		<div class="head">TODO APP</div>
+	<header id="myDIV">
+		<div class="headpc"><img class="pc" src="PC.png"></div>
+		<div class="headtablet"><img class="tablet" src="Tablet.png"></div>
+		<div class="headcelu"><img class="celu" src="Celu.png"></div>
 	</header>
 	<section>
-		<div class= "row menu">
+		<div class= "row">
 			<div class= "container">
-				<h1>Añade tu tarea</h1>
-				<input type="text" id="todo" class="form-control texto" placeholder="Añade tu tarea">	
-				<p><input type="button" id ="add" class="btn btn-primary btn-lg" href="#" value="Añadir tarea"></p>
-				<ul class="classlista">
-				<li><div class="checkbox tarea row">
-					<label>
-					<input type="checkbox" id="todoList"> <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-					</label>
-					<a href="#"><i class="fa fa-trash iconos" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-heart iconos" aria-hidden="true"></i></a>
-				</div></li>
-				</ul>
+				<input type="text" id="agregatarea" class="form-control texto" placeholder="Añade tu nueva tarea">
+				<span onclick="todoapp()" class="btn btn-primary btn-lg boton"><i class="fa fa-plus" aria-hidden="true"></i> Añadir Tarea</span>
 			</div>
 		</div>
 	</section>
+	<section>
+		<div class="container">
+			<ul id="nuevalista">
+			</ul>
+		</div>
+	</section>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 body{
 	font-family: Helvetica;
@@ -12,7 +12,7 @@ body{
 	width: 90%;
 	margin: 0 auto;
 }
-.head {
+.headpc {
 	width: 100%;
 	font-size: 20px;
 	text-align: center;
@@ -20,28 +20,77 @@ body{
 	padding: 1%;
 	border-bottom: 1px solid #D0D3D5;
 }
-.texto {
-	margin-top: 10px;
-	margin-bottom: 10px;
+.headtablet {
+	width: 100%;
+	font-size: 20px;
+	text-align: center;
+	background-color: white;
+	padding: 1%;
+	border-bottom: 1px solid #D0D3D5;
+	display:none;
 }
-.tarea {
+.headcelu {
+	width: 100%;
+	font-size: 20px;
+	text-align: center;
+	background-color: white;
+	padding: 1%;
+	border-bottom: 1px solid #D0D3D5;
+	display:none;
+}
+.texto {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+li {
 	width: 100%;
 	background-color: #E5F2F7;
 	border: 1px solid #E1E8ED;
 	padding: 10px;
 	border-radius: 5px;
+	list-style: none;
+	margin-top: 2px;
+}
+.boton{
+	margin-bottom: 10px;
 }
 .iconos{
 	margin: 5px;
 	font-size: 20px;
-	float:right;
-}
-:checked + span {
-  text-decoration: line-through;
-}
-.classlista{
-	list-style:none;
 }
 .row{
 	margin: 0;
+}
+.checked {
+	text-decoration: line-through;
+}
+.like{
+	color:red;
+}
+.pc{
+	width: 25%;
+}
+@media (max-width : 768px) and (min-width : 480px){
+	.headpc{
+		display: none;
+	}
+	.headtablet{
+		display: inline-block;
+	}
+	.tablet{
+		width: 70%;
+	}
+}
+@media
+(min-width: 320px) and (max-width: 479px){
+	.headpc{
+		display: none;
+	}
+	.headcelu{
+		display: inline-block;
+	}
+	.celu{
+		width: 80%;
+	}
+
 }
